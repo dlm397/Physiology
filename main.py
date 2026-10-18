@@ -1,8 +1,8 @@
 from pprint import pp as printp
-from pathlib import Path
+from Data import dataGet
 import matplotlib.pyplot as plt, numpy as np, pandas as pd
 
-data = pd.read_csv(Path(__file__).resolve().parent / "Data" / "datasets" / "daily_data.csv", index_col="timestamp", parse_dates=True)
+data = dataGet.daily_data()
 
 predictors = ["sleep", "steps", "stress", "heart_rate", "oxygen", "respiration", "skin_temp", "stress"]
 paired = data[predictors + ["energy"]].dropna()
