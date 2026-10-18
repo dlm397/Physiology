@@ -8,4 +8,7 @@ tsset date
 
 regress energy L.sleep L(1/2).energy /*steps ages  oxygen respiration skin_temp stress heart_rate */
 
-do "Data/dataGet.do" save_daily_data
+do "Data/dataGet.do" sleep_events
+
+describe
+summarize
