@@ -1,0 +1,7 @@
+# Samsung Health parser.
+pyarrow>=18
+
+# Importable health time series, weight sheet analysis and plotting.
+numpy
+pandas
+matplotlib
